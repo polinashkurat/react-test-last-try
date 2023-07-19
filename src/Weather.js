@@ -12,4 +12,5 @@ export default function Weather(props) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${key}`;
 
   axios.get(apiUrl).then(handleResponse);
+  return <h2>Hello</h2>;
 }
